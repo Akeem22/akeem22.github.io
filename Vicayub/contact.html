@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vicayub Energy Nigeria Limited</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<style>
+    .content-box {
+        width: 87vw;
+        margin: 30px auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        padding: 30px 30px;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    h1::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 4px;
+        background-color: var(--gold);
+        margin-top: 8px;
+    }
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form label {
+        width: 100%;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #666;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    .contact-form button {
+        padding: 10px 20px;
+        background-color: #ffdd59;
+        border: none;
+        border-radius: 4px;
+        color: #000;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
+
+    .contact-form button i {
+        margin-left: 10px;
+    }
+
+    .contact-form button:hover {
+        background-color: #e0c100;
+    }
+
+    @media (max-width: 768px) {
+        .content-box {
+            width: 95vw;
+            padding: 15px;
+            margin: 25px 15px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            font-size: 14px;
+            margin: 15px;
+        }
+
+        .contact-form button {
+            padding: 10px;
+            font-size: 16px;
+        }
+    }
+</style>
+
+<body>
+    <nav class="navbar">
+        <img src="images/vicayub_logo2.png" alt="Brand Logo" class="brand-logo">
+        <a href="javascript:void(0);" class="toggle-button" id="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links" id="navbar-links">
+            <span class="close-button" id="close-button">&times;</span>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="content-box">
+        <section class="section-contact">
+            <h1>Contact Us</h1>
+            <form class="contact-form" action="mailto:your-email@example.com" method="post" enctype="text/plain">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required placeholder="Your email address">
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required placeholder="Subject">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="6" required placeholder="Your message"></textarea>
+
+                <button type="submit">
+                    Submit
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </section>
+    </div>
+
+
+
+    <footer class="footer">
+        <div>
+            <h3>Vicayub ENL</h3>
+        </div>
+
+        <div>
+            <h3>Contact</h3>
+            <div class="contact">
+                <p><i class="fas fa-phone"></i> +234 806 096 7890</p>
+                <p><i class="fas fa-phone"></i> +234 808 994 1495</p>
+                <p><i class="fas fa-envelope"></i> info@vicayub.com.ng</p>
+                <p><i class="fas fa-map-marker-alt"></i> Vicayub Energy Nigeria Limited,<br> Along Mokola-Oritamerin
+                    Road,
+                    Ibadan, <br> Oyo, Nigeria</p>
+            </div>
+        </div>
+        <div>
+            <h3>Follow Us</h3>
+            <div class="social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="bottom">
+            <p>&copy; Vicayub Energy Nigeria Limited, 2024</p>
+        </div>
+    </footer>
+
+
+
+</body>
+
+<script src="script.js"></script>
+
+</html>

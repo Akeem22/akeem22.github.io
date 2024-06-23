@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vicayub Energy Nigeria Limited</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #fcfcfc;
+        color: #000;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .content-box {
+        width: 87vw;
+        margin: 35px auto;
+        padding: 30px 30px;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+    }
+
+    .section-about h1,
+    .section-about h2 {
+        text-align: center;
+        margin: 25px 0px;
+    }
+
+    .section-about h1::after, .section-about h2::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 4px;
+        border-bottom: 2px dashed var(--gold);
+        margin-top: 10px;
+    }
+
+    .section-about {
+        margin-bottom: 40px;
+    }
+
+    .section-about p {
+        color: #666;
+        line-height: 1.6;
+        margin-left: 20px;
+        text-align: left;
+    }
+
+    .cards {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        background-color: #ffdd59;
+        padding: 20px;
+        margin: 10px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: calc(30% - 20px);
+        text-align: center;
+    }
+    .card p{
+        text-align: center;
+    }
+    .card h3 {
+        margin-bottom: 10px;
+    }
+
+    .card i {
+        font-size: 40px;
+        margin-bottom: 10px;
+        color: #000;
+    }
+
+    .team {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 50px 50px;
+    }
+
+    .team-member {
+        text-align: center;
+        margin: 10px;
+    }
+
+    .team-member img {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        margin-bottom: 10px;
+    }
+
+    .team-member h3 {
+        margin-bottom: 5px;
+    }
+
+    .team-member p {
+        color: #666;
+        text-align: center;
+    }
+
+    @media (max-width: 768px) {
+        /*  body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        } */
+
+        .content-box {
+            width: 100vw;
+            margin: 35px 10px;
+            padding: 20px 10px;
+        }
+
+        .cards {
+            margin: 10px auto;
+        }
+
+        .card,
+        .team-member {
+            width: 100%;
+        }
+
+
+        .section-about p {
+            margin: 10px;
+        }
+
+        .section-about {
+            padding: 10px;
+            margin-top: 30px;
+        }
+    }
+</style>
+
+<body>
+    <nav class="navbar">
+        <img src="images/vicayub_logo2.png" alt="Brand Logo" class="brand-logo">
+        <a href="javascript:void(0);" class="toggle-button" id="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links" id="navbar-links">
+            <span class="close-button" id="close-button">&times;</span>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="content-box">
+        <section class="section-about">
+            <h1>About Us</h1>
+            <p>Vicayub Energy Nigeria Limited is a distinguished indigenous company operating within the downstream
+                sector of the oil and gas industry in Nigeria. Renowned for its commitment to quality and customer
+                satisfaction, Vicayub Energy specializes in the retail of premium petroleum products, including gasoline
+                (PMS), diesel (AGO), kerosene (DPK), and liquefied petroleum gas (LPG). <br> <br>
+                Vicayub Energy Nigeria Limited is a duly registered organization (RC1296527) founded in 2015, with our
+                headquarters in Ibadan and a host of other outlets across Nigeria.
+            </p>
+
+        </section>
+
+        <section class="section-about">
+            <h2>Our Vision, Mission, and Core Values</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Vision</h3>
+                    <i class="fas fa-eye"></i>
+                    <p>To be the leading provider of quality products and services.</p>
+                </div>
+                <div class="card">
+                    <h3>Mission</h3>
+                    <i class="fas fa-bullseye"></i>
+                    <p>To deliver exceptional value to our customers through innovation and excellence.</p>
+                </div>
+                <div class="card">
+                    <h3>Core Values</h3>
+                    <i class="fas fa-heart"></i>
+                    <p>Integrity, Customer Focus, Excellence, Innovation, and Teamwork.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-about">
+            <h2>Our Team</h2>
+            <div class="team">
+                <div class="team-member">
+                    <img src="images/icons/avatar.png" alt="Team Member 1">
+                    <h3>Adegboyega Oyefiade</h3>
+                    <p>Director</p>
+                </div>
+                <div class="team-member">
+                    <img src="images/icons/avatar.png" alt="Team Member 2">
+                    <h3>Adedamola Oyefiade</h3>
+                    <p>Director</p>
+                </div>
+                <div class="team-member">
+                    <img src="images/icons/avatar.png" alt="Team Member 3">
+                    <h3>Osungbemi Victor</h3>
+                    <p>Director</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div>
+            <h3>Vicayub ENL</h3>
+        </div>
+
+        <div>
+            <h3>Contact</h3>
+            <div class="contact">
+                <p><i class="fas fa-phone"></i> +234 806 096 7890</p>
+                <p><i class="fas fa-phone"></i> +234 808 994 1495</p>
+                <p><i class="fas fa-envelope"></i> info@vicayub.com.ng</p>
+                <p><i class="fas fa-map-marker-alt"></i> Vicayub Energy Nigeria Limited,<br> Along Mokola-Oritamerin
+                    Road,
+                    Ibadan, <br> Oyo, Nigeria</p>
+            </div>
+        </div>
+        <div>
+            <h3>Follow Us</h3>
+            <div class="social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="bottom">
+            <p>&copy; Vicayub Energy Nigeria Limited, 2024</p>
+        </div>
+    </footer>
+
+
+
+</body>
+
+<script src="script.js"></script>
+
+</html>

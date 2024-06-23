@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vicayub Energy Nigeria Limited</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+ <!--  <style>
+    /* Basic styling for the navbar */
+    :root {
+      --white: #fff;
+      --black: #000;
+      --gold: #ffdd59;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #fcfcfc;
+      box-sizing: border-box;
+      overflow-x: hidden;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      position: sticky;
+      top: 0;
+      z-index: +5;
+      background-color: var(--white);
+      width: 100vw;
+    }
+
+    .brand-logo {
+      width: 70px;
+    }
+
+    .navbar-links ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      margin-right: 15vw;
+    }
+
+    .navbar-links li {
+      margin: 0 15px;
+    }
+
+    .navbar-links a {
+      color: var(--black);
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .navbar-links a:hover {
+      color: var(--gold);
+    }
+
+    .navbar-links li a:active {
+      color: var(--gold);
+    }
+
+    .toggle-button {
+      display: none;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 21px;
+    }
+
+    .toggle-button .bar {
+      width: 25px;
+      height: 3px;
+      background-color: var(--gold);
+      border-radius: 10px;
+    }
+
+    .close-button {
+      display: none;
+    }
+
+    .section {
+      display: flex;
+      align-items: center;
+      padding: 50px;
+      border-top: 2px dashed var(--gold);
+    }
+
+    .section-text {
+      flex: 1;
+      padding: 20px;
+      height: 300px;
+      line-height: 25px;
+    }
+
+    .section-text h1 {
+      font-size: 1.5em;
+      margin: 0px 0;
+    }
+
+    .section-text p {
+      font-size: 1em;
+      color: #666;
+      margin-top: 10px;
+    }
+
+    .section-text .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-top: 20px;
+      margin-bottom: 55px;
+      background-color: var(--black);
+      color: var(--gold);
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .section-carousel {
+      flex: 1.3;
+      position: relative;
+    }
+
+    .carousel {
+      display: flex;
+      overflow: hidden;
+      width: 100%;
+      height: 380px;
+    }
+
+    .carousel img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .carousel-buttons {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      pointer-events: none;
+    }
+
+    .carousel-buttons button {
+      background-color: rgba(0, 0, 0, 0.5);
+      border: none;
+      color: white;
+      font-size: 2em;
+      cursor: pointer;
+      pointer-events: all;
+    }
+
+    .container {
+      padding: 30px 30px;
+      width: 87vw;
+      margin: 35px auto;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      border-radius: 10px;
+
+    }
+
+    .mission h1 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      text-align: center;
+      color: var(--black);
+      line-height: normal;
+    }
+
+    .mission {
+      margin-bottom: 20px;
+      flex: 1.5;
+    }
+
+    .mission h2 {
+      font-size: 1.5em;
+      color: var(--gold);
+      margin-bottom: 10px;
+    }
+
+    .mission p {
+      font-size: 1em;
+      color: #666;
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+
+    .image-container {
+      text-align: center;
+      margin-top: 20px;
+      flex: 0.7;
+    }
+
+    .image-container img {
+      width: 100%;
+      height: max-content;
+      border-radius: 10px;
+    }
+
+    .services-section {
+      width: 87vw;
+      margin: 20px auto;
+      text-align: center;
+      padding: 30px 30px;
+      background-color: #f9f9f9;
+      border: 1px dashed var(--gold);
+      border-radius: 10px;
+    }
+
+    .services-section h3 {
+      font-size: 30px;
+      margin-bottom: 30px;
+      color: #666;
+    }
+
+    .services-container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .service-item {
+      width: 30%;
+      padding: 20px;
+      box-sizing: border-box;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .service-item img {
+      margin-bottom: 10px;
+      width: 70px;
+      padding: 10px 10px;
+      border-radius: 50%;
+      border: 2px solid var(--gold);
+    }
+
+    .service-item h4 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .service-item p {
+      font-size: 16px;
+      color: #666;
+    }
+
+    .why-choose-us {
+      width: 100vw;
+      padding: 50px 20px;
+      text-align: center;
+      background-color: #f4f4f4;
+    }
+
+    .section-title {
+      font-size: 1.5em;
+      margin-bottom: 20px;
+      position: relative;
+      display: inline-block;
+      color: #666;
+    }
+
+    .section-title::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 4px;
+      background-color: var(--gold);
+      margin-top: 8px;
+    }
+
+    .intro-paragraph {
+      font-size: 1.2em;
+      margin-bottom: 40px;
+      color: #666;
+    }
+
+    .reasons-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .reason-card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 250px;
+      text-align: center;
+      margin: 15px;
+    }
+
+    .icon-container {
+      background: #fff;
+      border-radius: 50%;
+      padding: 15px;
+      display: inline-block;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-bottom: 15px;
+    }
+
+    .reason-icon {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+    }
+
+    .reason-title {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+      color: #666;
+    }
+
+    .reason-description {
+      font-size: 1em;
+      color: #666;
+    }
+
+    .footer {
+      background-color: var(--black);
+      color: var(--gold);
+      padding: 30px 20px;
+      display: flex;
+      justify-content: space-around;
+      align-items: first baseline;
+      flex-wrap: wrap;
+      width: 100vw;
+    }
+
+    .footer div {
+      flex: 1;
+      min-width: 250px;
+      margin: 10px;
+    }
+
+    .footer h3 {
+      margin-bottom: 20px;
+      font-size: 18px;
+      text-transform: uppercase;
+    }
+
+    .footer p,
+    .footer a {
+      color: #cccccc;
+      font-size: 14px;
+      text-decoration: none;
+      margin-bottom: 10px;
+    }
+
+    .footer .social a {
+      color: #ffeb3b;
+      margin: 0 5px;
+      font-size: 18px;
+    }
+
+    .footer .social a:hover {
+      color: white;
+    }
+
+    .footer .contact p {
+      margin: 5px 0;
+    }
+
+    .footer .contact i {
+      margin-right: 10px;
+    }
+
+    .footer .contact {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer .links li,
+    .footer .company li {
+      margin-bottom: 10px;
+    }
+
+    .footer .bottom {
+      text-align: center;
+      width: 100%;
+      color: var(--gold);
+      margin-right: 20px;
+    }
+
+    .footer .bottom p {
+      color: var(--gold);
+    }
+
+    @media (max-width: 768px) {
+      .navbar {
+        justify-content: space-between;
+      }
+
+      .navbar-links {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--white);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        transition: left 0.3s ease;
+        z-index: 1;
+      }
+
+      .navbar-links.active {
+        left: 0;
+      }
+
+      .navbar-links ul {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        margin-top: 10vh;
+      }
+
+      .navbar-links li {
+        margin: 15px 0;
+        width: 100%;
+      }
+
+      .navbar-links li a {
+        color: var(--gold);
+      }
+
+      .toggle-button {
+        display: flex;
+      }
+
+      .close-button {
+        display: none;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 2em;
+        color: var(--gold);
+        cursor: pointer;
+      }
+
+      .navbar-links.active .close-button {
+        display: block;
+      }
+
+      .section {
+        flex-direction: column;
+        padding: 20px;
+        width: 100vw;
+      }
+
+      .section-text,
+      .section-carousel {
+        width: 100%;
+      }
+
+      .carousel img {
+        height: auto;
+      }
+
+      .container {
+        padding: 10px;
+        flex-direction: column;
+        width: 100vw;
+        margin-left: 10px;
+      }
+
+      .mission h1 {
+        font-size: 1.5em;
+      }
+
+      .mission h2 {
+        font-size: 1.2em;
+      }
+
+      .mission p {
+        font-size: 0.9em;
+      }
+
+      .service-item {
+        width: 45%;
+      }
+
+      .services-section {
+        width: 100vw;
+        margin-left: 10px;
+        padding: 7px;
+        text-align: center;
+      }
+
+      .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100vw;
+        padding: 20px 20px;
+      }
+
+    }
+
+    @media (max-width: 480px) {
+
+      .service-item {
+        width: 100%;
+      }
+
+      .services-section h3 {
+        font-size: 28px;
+      }
+
+      .service-item h4 {
+        font-size: 20px;
+      }
+
+      .service-item p {
+        font-size: 14px;
+      }
+    }
+  </style> -->
+</head>
+
+<body>
+  <nav class="navbar">
+    <img src="images/vicayub_logo2.png" alt="Brand Logo" class="brand-logo">
+    <a href="javascript:void(0);" class="toggle-button" id="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+    <div class="navbar-links" id="navbar-links">
+      <span class="close-button" id="close-button">&times;</span>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="section">
+    <div class="section-text">
+      <h1>Welcome to Vicayub Energy Nigeria Limited</h1>
+      <p>Vicayub Energy Nigeria Limited is a distinguished indigenous company operating within the downstream sector of
+        the oil and gas industry in Nigeria. Renowned for its commitment to quality and customer satisfaction, Vicayub
+        Energy specializes in the retail of premium petroleum products, including gasoline (PMS), diesel (AGO), kerosene
+        (DPK), and liquefied petroleum gas (LPG). </p>
+      <a href="about.html" class="btn">Learn more</a>
+    </div>
+    <div class="section-carousel">
+      <div class="carousel" id="carousel">
+        <img src="images/plant.jpg" alt="Image 1">
+        <img src="images/plant2.jpg" alt="Image 2">
+        <img src="images/tank.jpg" alt="Image 3">
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="mission">
+      <h2>Our Mission</h2>
+      <p><strong>"Vicayub Energy Nigeria Limited is committed to delivering premium petroleum products with exceptional
+          service, driving sustainable growth and energy accessibility across Nigeria."</strong></p>
+      <p>At Vicayub Energy Nigeria Limited, our mission is to provide high-quality petroleum products and unparalleled
+        service to our customers, fostering sustainable development and energy accessibility throughout Nigeria.</p>
+      <p>We are dedicated to operating with integrity, safety, and environmental stewardship, ensuring that our actions
+        contribute positively to the communities we serve. Through innovation, strategic partnerships, and a
+        customer-centric approach, we aim to be a leading indigenous energy company, driving progress and supporting
+        the economic advancement of Nigeria.</p>
+    </div>
+    <div class="image-container">
+      <img src="images/new_img.jpg" alt="Abstract image">
+    </div>
+  </div>
+
+  <section class="services-section">
+    <h3>Our Services</h3>
+    <div class="services-container">
+      <div class="service-item">
+        <img src="images/icons/tanker.png" alt="">
+        <p><strong>B2B Retail</strong></p>
+        <p>At Vicayub Energy Nigeria Limited, we deliver premium petroleum products to businesses nationwide. Our B2B
+          services cater to industries like manufacturing, transportation, logistics, and energy.</p>
+      </div>
+      <div class="service-item">
+        <img src="images/icons/dispenser.png" alt="">
+        <p><strong>End User Retail</strong></p>
+        <p>We offer top-quality petroleum products to individual consumers across Nigeria. Our retail services ensure
+          reliable and convenient fuel supply for everyday needs, including gasoline, diesel, LPG, and kerosene.</p>
+      </div>
+      <div class="service-item">
+        <img src="images/icons/lpg.png" alt="">
+        <p><strong>LPG Equipment Retail</strong></p>
+        <p>We sell a wide range of high-quality LPG equipment for both domestic and industrial use. Our retail
+          offerings include gas cylinders, tanks, cookers, burners, and more, ensuring safe and efficient energy
+          solutions for homes and businesses across Nigeria.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="why-choose-us">
+    <h2 class="section-title">Why Choose Us</h2>
+    <p class="intro-paragraph">Discover the reasons why we stand out from the competition and why our clients choose to
+      work with us.</p>
+    <div class="reasons-container">
+      <div class="reason-card">
+        <div class="icon-container">
+          <img src="images/icons/badge.png" alt="High Quality Icon" class="reason-icon">
+        </div>
+        <h3 class="reason-title">High Quality</h3>
+        <p class="reason-description">We deliver top-notch services and products, ensuring the highest standards of
+          quality in everything we do.</p>
+      </div>
+      <div class="reason-card">
+        <div class="icon-container">
+          <img src="images/icons/help-desk.png" alt="Support Icon" class="reason-icon">
+        </div>
+        <h3 class="reason-title">Excellent Support</h3>
+        <p class="reason-description">Our dedicated support team is always ready to assist you with any inquiries or
+          issues, providing timely and effective solutions.</p>
+      </div>
+      <div class="reason-card">
+        <div class="icon-container">
+          <img src="images/icons/innovation.png" alt="Innovative Solutions Icon" class="reason-icon">
+        </div>
+        <h3 class="reason-title">Innovative Solutions</h3>
+        <p class="reason-description">We embrace innovation, constantly developing new solutions and improving our
+          services to stay ahead in the industry.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div>
+      <h3>Vicayub ENL</h3>
+    </div>
+
+    <div>
+      <h3>Contact</h3>
+      <div class="contact">
+        <p><i class="fas fa-phone"></i> +234 806 096 7890</p>
+        <p><i class="fas fa-phone"></i> +234 808 994 1495</p>
+        <p><i class="fas fa-envelope"></i> info@vicayub.com.ng</p>
+        <p><i class="fas fa-map-marker-alt"></i> Vicayub Energy Nigeria Limited,<br> Along Mokola-Oritamerin Road,
+          Ibadan, <br> Oyo, Nigeria</p>
+      </div>
+    </div>
+    <div>
+      <h3>Follow Us</h3>
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+    <div class="bottom">
+      <p>&copy; Vicayub Energy Nigeria Limited, 2024</p>
+    </div>
+  </footer>
+
+
+
+</body>
+
+</html>
+
+<script src="script.js"></script>
